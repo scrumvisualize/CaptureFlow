@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-synthesis: none; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+button, input, select { font: inherit; }
+button:disabled { cursor: not-allowed; opacity: .45; }
+.nav-item { display: flex; align-items: center; gap: 12px; border-radius: 12px; padding: 12px 13px; color: #64748b; font-size: 14px; font-weight: 500; text-decoration: none; transition: background .15s, color .15s; }
+.nav-item:hover { background: #f1f5f9; color: #0f172a; }
+.dark .nav-item:hover { background: #1e293b; color: #f8fafc; }
+.nav-active { background: #fff1f2; color: #be123c; }
+.dark .nav-active { background: rgba(225,29,72,.13); color: #fda4af; }
+.icon-button { display: inline-flex; height: 40px; width: 40px; align-items: center; justify-content: center; border: 1px solid #e2e8f0; border-radius: 12px; color: #64748b; transition: background .15s; }
+.icon-button:hover { background: #f1f5f9; }
+.dark .icon-button { border-color: #334155; color: #cbd5e1; }
+.dark .icon-button:hover { background: #1e293b; }
+.field { width: 100%; border: 1px solid #cbd5e1; border-radius: 11px; padding: 11px 12px; outline: none; background: white; color: #0f172a; font-size: 14px; transition: border .15s, box-shadow .15s; }
+.field:focus { border-color: #f43f5e; box-shadow: 0 0 0 3px rgba(244,63,94,.12); }
+.dark .field { border-color: #334155; background: #0b1120; color: #f1f5f9; }
+.primary-button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; border-radius: 11px; background: #e11d48; padding: 11px 16px; color: white; font-size: 14px; font-weight: 650; box-shadow: 0 4px 12px rgba(225,29,72,.16); transition: background .15s, transform .15s; }
+.primary-button:hover:not(:disabled) { background: #be123c; transform: translateY(-1px); }
+.secondary-button { display: inline-flex; align-items: center; gap: 8px; border: 1px solid #e2e8f0; border-radius: 11px; background: white; padding: 10px 13px; color: #334155; font-size: 13px; font-weight: 600; transition: background .15s; }
+.secondary-button:hover:not(:disabled) { background: #f8fafc; }
+.dark .secondary-button { border-color: #334155; background: #172338; color: #e2e8f0; }
+.dark .secondary-button:hover:not(:disabled) { background: #22314a; }
+.preview-grid { background-image: radial-gradient(circle at 1px 1px, rgba(148,163,184,.23) 1px, transparent 0); background-size: 22px 22px; }
